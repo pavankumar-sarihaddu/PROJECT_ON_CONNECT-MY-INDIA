@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form:</title>
+    <!--  <link rel="stylesheet" type="text/css" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css"> -->
+    <link rel="stylesheet" type="text/css" href="form.css">
+  <script>function updateTextInput(val) {
+          document.getElementById('textInput').value=val; 
+        }</script>
+</head>
+<!--body starts-->
+<body>
+   
+   <!--main container starts-->
+    <div style="max-width: 400px; margin: auto;">
+        <h2 style="text-align: center; color:green;"><i><u>Registration Form</u></i></h2>               <!--  heaading-->
+
+        <form action="/action_page.php" class="input-icons">                                                    <!--form starts-->
+            <label for="fname">First name:</label><br>                                          <!--first name-->
+            <input type="text" id="fname" name="fname" placeholder="Type Your first Name"><br>    
+            <label for="lname">Last name:</label><br>                                           <!--last name-->
+            <input type="text" id="lname" name="lname" placeholder="Type Your last Name"><br>
+            <label for="sname">Surname:</label><br>                                            <!-- surname-->
+            <input type="text" id="sname" name="sname" placeholder="Type Your surname"><br>
+            <label for="country">Country:</label>                                               <!--country-->
+            <select id="country" name="country">
+                <option value=""></option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="india">India</option>
+                <option value="pakistan">Pakistan</option>
+            </select><br><br>
+
+            <label for="State">State:</label>                                                 <!-- state-->
+            <select id="state" name="state">
+                <option value=""></option>
+                <option value="australia">AndhraPradesh</option>
+                <option value="canada">Telangana</option>
+                <option value="usa">Karnataka</option>
+                <option value="india">Kerala</option>
+                <option value="pakistan">Madhya Pradesh</option>
+            </select><br><br>
+
+
+            <label for="village">Village:</label>                                             <!-- village-->
+            <select id="village" name="Village">
+                <option value=""></option>
+                <option value="australia">China Avutapalle.</option>
+                <option value="canada">Chikkavaram.</option>
+                <option value="usa">Buthumillipadu</option>
+                <option value="india">Buddavaram</option>
+                <option value="pakistan">Balliparru.</option>
+            </select><br><br>
+ 
+            <label for="email">E-mail ID:</label><br>                                              <!-- email-->
+            <input type="email" id="email" name="email" placeholder="Type Your email id"><br>
+            <label for="email">Conform E-mail ID:</label><br>                                       <!--conform email-->
+            <input type="email" id="email" name="email" placeholder="Type Your email id"><br>
+            <label for="password">create password:</label><br>                                         <!-- password-->
+            <input type="password" id="pass" name="pass" placeholder="set Your password"><br>
+            <label for="password">Conform password:</label><br>                                         <!--conform password-->
+            <input type="password" id="pass" name="pass" placeholder="conform Your password"><br>
+            <label for="date">Date of Registration:</label><br>                                          <!--date-->
+            <input type="date" id="date" name="date" placeholder="choose registration date"><br>
+            <label for="time">Time of Registration:</label><br>                                           <!--time-->
+            <input type="time" id="time" name="time" placeholder="choose registration time"><br>
+            <label for="month">Month of Registration:</label><br>                                          <!--month-->
+            <input type="month" id="mont" name="mont" placeholder="choose registration month"><br>
+            <label for="tel">Mobile Number:</label><br>                                                   <!-- number-->
+            <input type="tel" id="num" name="num" placeholder="enter mobile num"><br>
+            <label for="image">Set Profile Picture :</label><br>                                    <!--image-->
+            <input type="image" id="img" name="img"><br>
+            <label for="file">Appload Resume :</label><br>                                          <!--file-->
+            <input type="file" id="file" name="file" placeholder="choose file"><br><br>
+            <p>Please select your Mother tounge language:</p>                                        <!--radio-->
+              <input type="radio" id="tel" name="fav_language" value="Telugu">
+              <label for="html">Telugu</label><br>
+              <input type="radio" id="eng" name="fav_language" value="English">
+              <label for="css">English</label><br>
+              <input type="radio" id="hin" name="fav_language" value="Hindi">
+              <label for="hin">Hindi</label><br><br>
+            <label for="vol">Years of Experience:</label>                                    <!--range-->
+            <input type="range" name="rangeInput" min="0" max="30" onchange="updateTextInput(this.value);">
+<input type="text" id="textInput" value="" style="width: 60px;height:50px;">
+
+
+            <input type="submit" value="Submit"> <input type="reset" value="Reset">                <!-- buttons-->
+        </form>                                                                                  <!-- form ends-->
+
+
+    </div>
+    <!--main container ends-->
+    
+</body>
+<!--body ends-->
+</html>
